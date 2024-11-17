@@ -1,0 +1,55 @@
+BMIWeightCalculator
+
+CLASS Adult:
+    PROPERTIES (private):
+        name (String)
+        height (float)
+        bmi (double)
+        weight (double)
+
+    CONSTRUCTOR:
+        Initialize:
+            name = ""
+            height = 0
+            bmi = 0
+            weight = 0
+
+    METHODS:
+        Getters and Setters for:
+            - name
+            - height
+            - bmi
+
+        calculateWeight():
+            weight = (bmi × height²) ÷ 703
+
+        getWeight():
+            return weight
+
+CLASS BMIRateCalculator:
+    CLASS Display:
+        METHOD displayUserInfo(Adult user):
+            Show header with program name
+            Show standard BMI range (18.5 - 24.9)
+            Display formatted:
+                - User's full name
+                - Height in inches
+                - Target BMI
+                - Expected weight
+
+    MAIN PROGRAM:
+        Create new Adult object
+
+        Get user input:
+            Ask for name
+            Ask for height in inches
+            Ask for target BMI
+
+        Calculate expected weight
+
+        Create Display object
+        Show all user information and results
+
+CALCULATIONS:
+    Weight Formula:
+        weight = (BMI × height²) ÷ 703
